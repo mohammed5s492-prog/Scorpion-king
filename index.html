@@ -8,35 +8,61 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: black;
     color: white;
+    background: black;
+}
+
+/* Navbar */
+nav {
+    background: #111;
+    padding: 15px;
     text-align: center;
 }
 
-header {
-    padding: 80px;
-    background: linear-gradient(black, darkred);
-}
-
-h1 {
-    font-size: 50px;
+nav a {
     color: gold;
-}
-
-p {
+    margin: 15px;
+    text-decoration: none;
     font-size: 18px;
 }
 
+nav a:hover {
+    color: red;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 60px;
+    color: gold;
+    text-shadow: 0 0 20px black;
+}
+
+header p {
+    font-size: 25px;
+}
+
+/* Section */
 .section {
-    padding: 40px;
+    padding: 50px;
+    text-align: center;
 }
 
 .card {
     background: #111;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
+    width: 80%;
     border-radius: 15px;
-    box-shadow: 0 0 15px red;
+    box-shadow: 0 0 20px red;
     transition: 0.3s;
 }
 
@@ -44,16 +70,16 @@ p {
     transform: scale(1.05);
 }
 
-button {
-    background: gold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-button:hover {
-    background: red;
+/* WhatsApp icon */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-decoration: none;
     color: white;
 }
 </style>
@@ -62,27 +88,36 @@ button:hover {
 
 <body>
 
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+</nav>
+
 <header>
     <h1>🦂 Scorpion King 🦂</h1>
-    <p>Welcome to my world 🔥</p>
+    <p>Welcome to my professional website 🔥</p>
 </header>
 
 <div class="section">
     <div class="card">
         <h2>👑 About Me</h2>
-        <p>أنا محمد، بحب البرمجة والتكنولوجيا 🚀</p>
+        <p>أنا محمد، مطور مواقع وده أول موقعي 🚀</p>
     </div>
 
     <div class="card">
-        <h2>💻 My Projects</h2>
-        <p>هنا هضيف كل مشاريعي قريبًا 🔥</p>
+        <h2>💻 Projects</h2>
+        <p>هنا هضيف أقوى مشاريعي قريبًا 🔥</p>
     </div>
 
     <div class="card">
         <h2>📞 Contact</h2>
-        <button onclick="alert('ابعتلي على واتساب قريب 😎')">تواصل معايا</button>
+        <p>تواصل معايا بسهولة 👇</p>
     </div>
 </div>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/201234567890" class="whatsapp">💬</a>
 
 </body>
 </html>
