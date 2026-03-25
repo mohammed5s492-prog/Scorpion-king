@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Scorpion King</title>
+<meta charset="UTF-8">
+<title>Scorpion King</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 80px;
+    background: linear-gradient(black, darkred);
+}
+
+h1 {
+    font-size: 50px;
+    color: gold;
+}
+
+p {
+    font-size: 18px;
+}
+
+.section {
+    padding: 40px;
+}
+
+.card {
+    background: #111;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px red;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background: red;
+    color: white;
+}
+</style>
+
 </head>
-<body style="text-align:center; font-family:Arial;">
-    <h1>🔥 Welcome to Scorpion King 🔥</h1>
-    <p>ده أول موقع ليا على GitHub 🚀</p>
+
+<body>
+
+<header>
+    <h1>🦂 Scorpion King 🦂</h1>
+    <p>Welcome to my world 🔥</p>
+</header>
+
+<div class="section">
+    <div class="card">
+        <h2>👑 About Me</h2>
+        <p>أنا محمد، بحب البرمجة والتكنولوجيا 🚀</p>
+    </div>
+
+    <div class="card">
+        <h2>💻 My Projects</h2>
+        <p>هنا هضيف كل مشاريعي قريبًا 🔥</p>
+    </div>
+
+    <div class="card">
+        <h2>📞 Contact</h2>
+        <button onclick="alert('ابعتلي على واتساب قريب 😎')">تواصل معايا</button>
+    </div>
+</div>
+
 </body>
 </html>
